@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 125%;
+  font-family: "Libre Franklin", sans-serif; }
+  @media (max-width: 1000px) {
+    html {
+      font-size: 100%; } }
+  @media (max-width: 820px) {
+    html {
+      font-size: 80%; } }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; }
+
+.heading__primary {
+  color: #969696;
+  font-weight: 300;
+  margin-bottom: 1.2rem; }
+  @media (max-width: 500px) {
+    .heading__primary {
+      font-size: 1.78rem; } }
+  @media (max-width: 314px) {
+    .heading__primary {
+      font-size: 1.5rem; } }
+  .heading__primary span {
+    color: #151f29;
+    font-weight: 700; }
+
+.heading__tertiary {
+  color: rgba(21, 31, 41, 0.978);
+  margin-bottom: 1.5rem;
+  font-weight: 300; }
+
+.header {
+  text-align: center;
+  width: 43vw; }
+  @media (max-width: 1000px) {
+    .header {
+      width: 60vw; } }
+  @media (max-width: 500px) {
+    .header {
+      width: 80vw; } }
+  .header__logo {
+    margin-bottom: 2rem;
+    margin-top: 4rem; }
+    @media (max-width: 820px) {
+      .header__logo {
+        width: 20%; } }
+  .header .form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 3.5rem; }
+    @media (max-width: 647px) {
+      .header .form {
+        flex-wrap: wrap;
+        gap: 1rem; } }
+    @media (max-width: 500px) {
+      .header .form {
+        width: 80vw; } }
+    .header .form-group {
+      flex: 4; }
+      .header .form-group__email {
+        order: 3;
+        width: 100%;
+        display: block;
+        padding: 0.7rem 1rem;
+        border-radius: 50rem;
+        outline: none;
+        border: 1.5px solid #e3e3e3;
+        font-size: 0.87rem;
+        font-weight: 300; }
+        @media (max-width: 647px) {
+          .header .form-group__email {
+            order: 1;
+            width: 100%; } }
+        .header .form-group__email::placeholder {
+          color: rgba(150, 150, 150, 0.3); }
+      .header .form-group__link {
+        width: 30%;
+        padding: 0.8rem;
+        border-radius: 50rem;
+        border: none;
+        background-color: #4f7df3;
+        color: #c2d3ff;
+        font-weight: 600;
+        font-size: 0.75rem;
+        color: #dbe5ff; }
+        @media (max-width: 647px) {
+          .header .form-group__link {
+            order: 1;
+            width: 100%; } }
+
+.dashboard {
+  width: 43vw; }
+  @media (max-width: 1000px) {
+    .dashboard {
+      width: 60vw; } }
+  @media (max-width: 500px) {
+    .dashboard {
+      width: 80vw; } }
+  .dashboard__img {
+    width: 100%; }
+
+.footer {
+  padding: 3.5rem;
+  width: 43vw;
+  text-align: center; }
+  @media (max-width: 1000px) {
+    .footer {
+      width: 60vw; } }
+  @media (max-width: 500px) {
+    .footer {
+      width: 80vw; } }
+  .footer__icons {
+    width: 100%;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    .footer__icons-link {
+      font-size: 0.8rem; }
+  .footer__description {
+    font-size: 0.8rem;
+    color: rgba(150, 150, 150, 0.9); }
